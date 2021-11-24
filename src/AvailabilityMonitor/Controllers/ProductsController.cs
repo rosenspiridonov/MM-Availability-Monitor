@@ -12,6 +12,7 @@
     using System.Collections.Generic;
     using System.Net;
     using AvailabilityMonitor.Services.Excel;
+    using System;
 
     public class ProductsController : Controller
     {
@@ -47,7 +48,7 @@
 
             try
             {
-                if ((string)TempData["NewProducts"] == "yes")
+                if (/*(string)TempData["NewProducts"] == "yes"*/input.NewProducts)
                 {
                     products = this.compareService
                         .NewProducts(input.CsvFile, input.XmlFile)
@@ -77,9 +78,10 @@
                         .ToList();
                 }
             }
-            catch (WebException)
+            catch (Exception)
             {
-                return BadRequest("One of the xml file endpoints is not working");
+                //return BadRequest("One of the xml file endpoints is not working");
+                return BadRequest("Incorect files");
             }
 
             return View(products);

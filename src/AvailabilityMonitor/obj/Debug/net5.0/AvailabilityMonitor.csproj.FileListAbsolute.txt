@@ -852,8 +852,6 @@ C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debu
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\AvailabilityMonitor.TagHelpers.output.cache
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\AvailabilityMonitor.RazorCoreGenerate.cache
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Views\Compare\ChangeStockStatus.cshtml.g.cs
-C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Views\Compare\NewProducts.cshtml.g.cs
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Views\Products\Results.cshtml.g.cs
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -870,3 +868,4 @@ C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debu
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\AvailabilityMonitor.pdb
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\AvailabilityMonitor.genruntimeconfig.cache
 C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\AvailabilityMonitor.csproj.CopyComplete
+C:\Users\User\Documents\MM-Availability-Monitor\src\AvailabilityMonitor\obj\Debug\net5.0\Razor\Views\Compare\Compare.cshtml.g.cs

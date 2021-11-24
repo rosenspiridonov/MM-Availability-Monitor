@@ -1,6 +1,6 @@
 ﻿@model FilesInputModel
 
-<h1 class="text-center my-5">Смяна на наличност на продуктите на сайта</h1>
+<h1 class="text-center my-5">Следене на наличности</h1>
 
 <form method="post"
       enctype="multipart/form-data"
@@ -18,6 +18,10 @@
         <label asp-for="@Model.XmlFile"></label>
         <input asp-for="@Model.XmlFile" />
         <span asp-validation-for="@Model.XmlFile" class="text-danger d-block"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.NewProducts"></label>
+        <input asp-for="@Model.NewProducts" />
     </div>
 
     <input type="submit" value="Upload" class="btn btn-dark w-100" />

@@ -13,5 +13,8 @@
         [Required]
         [Display(Name = "Art list XML file")]
         public IFormFile XmlFile { get; set; }
+
+        [Display(Name = "New products")]
+        public bool NewProducts { get; set; }
     }
 }

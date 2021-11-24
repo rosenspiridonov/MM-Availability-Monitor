@@ -18,8 +18,7 @@
 
         public IActionResult Index()
         {
-            //return RedirectToAction("ChangeStockStatus", "Compare");
-            return View();
+            return RedirectToAction("Compare", "Compare");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -4,12 +4,7 @@
 
     public class CompareController : Controller
     {
-        public IActionResult ChangeStockStatus()
-        {
-            return View();
-        }
-
-        public IActionResult NewProducts()
+        public IActionResult Compare()
         {
             return View();
         }
