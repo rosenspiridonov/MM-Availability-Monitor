@@ -1,0 +1,43 @@
+﻿@model List<ProductListingModel>
+
+<div class="container">
+    <table class="table table-bordered table-striped products">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">№</th>
+                <th scope="col">Sku</th>
+                <th scope="col">Марка</th>
+                @if (Model.All(x => x.StockType != null))
+                {
+                    <th scope="col">Действие</th>
+                }
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <th scope="row">@(i + 1)</th>
+                <td>@Model[i].Sku</td>
+                <td>@Model[i].Brand</td>
+                @if (Model[i].StockType != null)
+                {
+                    <td>@Model[i].StockType</td>
+                }
+                <td class="text-center"><input type="checkbox" name="complete" value="" class="complete" /></td>
+            </tr>
+        }
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        $('.products .complete').change(function () {
+            if ($(this).is(':checked')) {
+                $(this).parent().parent().css('background-color', '#00ff2650');
+            } else {
+                $(this).parent().parent().css('background-color', '');
+            }
+        });
+    </script>
+}
