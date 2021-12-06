@@ -10,7 +10,7 @@
                 "amt",
                 "asobu",
                 "bredemeijer group",
-                "cole & mason",
+                "cole &amp; mason",
                 "emile henry",
                 "eko europe",
                 "gefu",

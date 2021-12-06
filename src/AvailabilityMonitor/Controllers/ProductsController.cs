@@ -56,6 +56,7 @@
                         {
                             Sku = x.Sku,
                             Brand = x.Brand,
+                            Name = x.Name
                         })
                         .Distinct(new ProductEqualityComparer())
                         .OrderBy(x => x.Brand)
@@ -71,7 +72,8 @@
                         {
                             Sku = x.Sku,
                             Brand = x.Brand,
-                            StockType = x.StockType == StockType.ToHide ? "За скриване" : "За показване"
+                            StockType = x.StockType == StockType.ToHide ? "Скриване" : "Показване",
+                            Name = x.Name
                         })
                         .Distinct(new ProductEqualityComparer())
                         .OrderBy(x => x.Brand)

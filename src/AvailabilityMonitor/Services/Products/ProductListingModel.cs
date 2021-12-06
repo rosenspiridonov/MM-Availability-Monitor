@@ -9,6 +9,8 @@ namespace AvailabilityMonitor.Services.Products
             IsCompleted = false;
         }
 
+        public string Name { get; set; }
+
         public string Sku { get; set; }
 
         public string Brand { get; set; }

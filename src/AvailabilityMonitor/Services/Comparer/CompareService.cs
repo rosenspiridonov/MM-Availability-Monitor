@@ -6,7 +6,6 @@
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
 
-    using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
@@ -51,7 +50,8 @@
                         products.Add(new NewProductModel()
                         {
                             Sku = xmlItem.Sku,
-                            Brand = xmlItem.Brand
+                            Brand = xmlItem.Brand,
+                            Name = xmlItem.ProductName
                         });
                     }
                 }
@@ -79,7 +79,8 @@
                 var product = new StockChangeModel()
                 {
                     Sku = csvItem.Sku,
-                    Brand = csvItem.Brand
+                    Brand = csvItem.Brand,
+                    Name = csvItem.ProductName
                 };
 
                 var xmlItem = xmlRecords.FirstOrDefault(x => x.Sku == csvItem.Sku);
@@ -152,14 +153,16 @@
             {
                 Sku = x.Sku,
                 InStock = x.InStock.ToLower() == "yes",
-                Brand = x.Brand
+                Brand = x.Brand,
+                ProductName = x.ProductName
             }).ToList());
 
             models.AddRange(giftshopXml.Select(x => new XmlModel
             {
                 Sku = x.Sku,
                 InStock = x.InStock.ToLower() == "in stock",
-                Brand = x.Brand
+                Brand = x.Brand,
+                ProductName = x.ProductName
             }).ToList());
 
             return models;

@@ -5,6 +5,9 @@
     [XmlType("art")]
     public class XmlModelArt
     {
+        [XmlElement(ElementName = "name")]
+        public string ProductName { get; set; }
+
         [XmlElement(ElementName = "kol_free")]
         public string InStock { get; set; }
 

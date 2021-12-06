@@ -1,28 +1,30 @@
 ﻿@model FilesInputModel
 
-<h1 class="text-center my-5">Следене на наличности</h1>
+<div class="container">
+    <h1 class="text-center my-5">Следене на наличности</h1>
 
-<form method="post"
-      enctype="multipart/form-data"
-      asp-controller="Products"
-      asp-action="Results"
-      class="offset-4 col-4 mt-5 d-flex d-flex justify-content-center align-items-center flex-column border rounded"
-      id="upload-form">
-    <div class="text-danger">@TempData["Incorrect files"]</div>
-    <div class="form-group">
-        <label asp-for="@Model.CsvFile"></label>
-        <input asp-for="@Model.CsvFile" />
-        <span asp-validation-for="@Model.CsvFile" class="text-danger d-block"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.XmlFile"></label>
-        <input asp-for="@Model.XmlFile" />
-        <span asp-validation-for="@Model.XmlFile" class="text-danger d-block"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="@Model.NewProducts"></label>
-        <input asp-for="@Model.NewProducts" />
-    </div>
+    <form method="post"
+          enctype="multipart/form-data"
+          asp-controller="Products"
+          asp-action="Results"
+          class="offset-4 col-4 mt-5 d-flex d-flex justify-content-center align-items-center flex-column border rounded"
+          id="upload-form">
+        <div class="text-danger">@TempData["Incorrect files"]</div>
+        <div class="form-group">
+            <label asp-for="@Model.CsvFile"></label>
+            <input asp-for="@Model.CsvFile" />
+            <span asp-validation-for="@Model.CsvFile" class="text-danger d-block"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.XmlFile"></label>
+            <input asp-for="@Model.XmlFile" />
+            <span asp-validation-for="@Model.XmlFile" class="text-danger d-block"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.NewProducts"></label>
+            <input asp-for="@Model.NewProducts" />
+        </div>
 
-    <input type="submit" value="Upload" class="btn btn-dark w-100" />
-</form>
+        <input type="submit" value="Upload" class="btn btn-dark w-100" />
+    </form>
+</div>

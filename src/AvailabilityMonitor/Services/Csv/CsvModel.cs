@@ -4,6 +4,9 @@
 
     public class CsvModel
     {
+        [Name("Име на продукт")]
+        public string ProductName { get; set; }
+
         [Name("sku")]
         public string Sku { get; set; }
 

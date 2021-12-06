@@ -1,11 +1,12 @@
 ﻿@model List<ProductListingModel>
 
-<div class="container">
+<div class="container-fluid">
     <table class="table table-bordered table-striped products">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">№</th>
                 <th scope="col">Sku</th>
+                <th scope="col">Име</th>
                 <th scope="col">Марка</th>
                 @if (Model.All(x => x.StockType != null))
                 {
@@ -20,6 +21,7 @@
                 <th scope="row">@(i + 1)</th>
                 <td>@Model[i].Sku</td>
                 <td>@Model[i].Brand</td>
+                <td>@Model[i].Name</td>
                 @if (Model[i].StockType != null)
                 {
                     <td>@Model[i].StockType</td>

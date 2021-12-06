@@ -5,6 +5,9 @@
     [XmlType("item")]
     public class XmlModelGiftshop
     {
+        [XmlElement(ElementName = "Name")]
+        public string ProductName { get; set; }
+
         [XmlElement(ElementName = "InStock")]
         public string InStock { get; set; }
 
