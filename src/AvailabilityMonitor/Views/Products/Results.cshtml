@@ -1,14 +1,26 @@
 ﻿@model List<ProductListingModel>
 
+@{
+    var forStockChange = Model.All(x => x.StockType != null);
+}
+
 <div class="container-fluid">
+    @if (forStockChange)
+    {
+        <h1 class="h1 text-center mb-4">Продукти за смяна на наличност</h1>
+    }
+    else
+    {
+        <h1 class="h1 text-center mb-4">Нови продукти</h1>
+    }
     <table class="table table-bordered table-striped products">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">№</th>
                 <th scope="col">Sku</th>
-                <th scope="col">Име</th>
                 <th scope="col">Марка</th>
-                @if (Model.All(x => x.StockType != null))
+                <th scope="col">Име</th>
+                @if (forStockChange)
                 {
                     <th scope="col">Действие</th>
                 }
@@ -22,7 +34,7 @@
                 <td>@Model[i].Sku</td>
                 <td>@Model[i].Brand</td>
                 <td>@Model[i].Name</td>
-                @if (Model[i].StockType != null)
+                @if (forStockChange)
                 {
                     <td>@Model[i].StockType</td>
                 }
