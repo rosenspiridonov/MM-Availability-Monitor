@@ -117,7 +117,7 @@
 
         private List<CsvModel> GetCsvRecords(IFormFile csvFile) => this.csvProcesor
                .Parse<CsvModel>(csvFile)
-               .Where(x => DataConstants.Brands.Contains(x.Brand.ToLower()))
+               .Where(x => DataConstants.Brands.Any(b => b.ToLower().Contains(x.Brand.ToLower())))
                .ToList();
 
         private async Task<List<XmlModel>> GetXmlRecords(IFormFile xmlFile)
