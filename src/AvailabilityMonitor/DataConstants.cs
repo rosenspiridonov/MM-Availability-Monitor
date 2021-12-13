@@ -8,13 +8,13 @@
             => new()
             {
                 "amt",
-                "asobu",
-                "bredemaijer group",
+                "asobu",//
+                "bredemaijer group",// real brand name
                 "bredemeijer group",
                 "cole &amp; mason",
                 "emile henry",
                 "eko europe",
-                "eko-europe",
+                "eko-europe",// real brand name
                 "gefu - germany",
                 "herdmar",
                 "jamie oliver",
@@ -22,13 +22,13 @@
                 "silampos",
                 "skk",
                 "umbra hk limited",
-                "veritable",
+                "veritable",//
                 "vin bouquet",
                 "zyliss",
                 "brabantia",
                 "tescoma",
                 "rona",
-                "spiegelau",
+                "spiegelau",//
                 "nachtmann",
                 "luigi ferrero",
             };
