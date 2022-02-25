@@ -1,6 +1,5 @@
 namespace AvailabilityMonitor
 {
-    using AvailabilityMonitor.Data;
     using AvailabilityMonitor.Services.Comparer;
     using AvailabilityMonitor.Services.Csv;
     using AvailabilityMonitor.Services.Excel;
@@ -9,8 +8,6 @@ namespace AvailabilityMonitor
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http.Features;
-    using Microsoft.AspNetCore.Identity;
-    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
@@ -26,13 +23,6 @@ namespace AvailabilityMonitor
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //    options.UseSqlServer(
-            //        Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddDatabaseDeveloperPageExceptionFilter();
-
-            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-            //    .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
 
             services.Configure<FormOptions>(options =>
@@ -73,7 +63,6 @@ namespace AvailabilityMonitor
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                //endpoints.MapRazorPages();
             });
         }
     }
