@@ -31,6 +31,8 @@
                 "spiegelau",//
                 "nachtmann",
                 "luigi ferrero",
+                "pebbly",
+                "blomus"
             };
     }
 }

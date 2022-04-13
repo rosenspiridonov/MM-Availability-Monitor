@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ReHZUdC+wmB6BYXw/18Mxn0zLwErU2U7rTeigbm6hFMm6lP9K+iv0eSSvjUHqlRvgWHIcHpimEu7IhYyCyfUig==",
+  "dgSpecHash": "rZjmwG6A8NGnBWMBqv0TlRHKVJeWoIj1W+WC43DOx4lZVDIcDQcvGQFByEU7xbomuPPgX+1r7kzhBZXAXa50Ew==",
   "success": true,
   "projectFilePath": "D:\\CreateX\\MM-Availability-Monitor\\src\\AvailabilityMonitor\\AvailabilityMonitor.csproj",
   "expectedPackageFiles": [
@@ -122,7 +122,8 @@
     "C:\\Users\\rspir\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\rspir\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\rspir\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\rspir\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\rspir\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\rspir\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
   ],
   "logs": [
     {
